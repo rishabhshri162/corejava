@@ -3,29 +3,23 @@ package in.co.rays.basic;
 public class NameChar {
 	public static void main(String[] args) {
 
-		String name = "Rishabh";
-		int count = 0; 
+		String str = "aabbccggf";
 
-		for (int i = 0; i < name.length(); i++) {
-			if ('R' == name.charAt(i) || ) {
-				count++;
-			}
+		int count = 0;
 
-		System.out.println("R = " + count);
-	
-
-
+		for (char c = 'a'; c <= 'z'; c++) {
+         for (int i = 0; i<str.length(); i++) {
+        	 if (c== str.charAt(i)) {
+        		 count++;
+        	 }
+        	 
+        	 
+         }
+         if (count > 0) {
+        	 System.out.println(c + "=" + count);
+        	 count = 0;
+         }
+		
 		}
 	}
-
 }
-
-
-		
-	
-
-	
-
-
-
-

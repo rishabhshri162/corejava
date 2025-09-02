@@ -37,8 +37,13 @@ public class Account {
 	 
 //	 withdrawal method
 	 public void withdrawal (double amount) {
-		 this .balance = this.balance - amount;
-		 System.out.println("total balanace after withdrawal:- " + getbalance());
+		 if (amount > this.balance) {
+			 System.out.println("Insufficient fund transfer " + getbalance());
+			
+		} else {
+			System.out.println("Total balance after withdrawal " + getbalance());
+		}
+
 	 }
 	
 

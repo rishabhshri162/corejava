@@ -4,6 +4,7 @@ public class Automobile {
 	private String color;
 	private int Speed;
 	private String Brand;
+	public static final int NO_OF_GEARS = 5;
 
 	public String getColor() {
 		return this.color;
@@ -32,4 +33,25 @@ public class Automobile {
 		this.Brand = Brand;
 	}
 
+	public void accelerator() {
+		Speed = Speed + 10;
+		System.out.println("Accelerated. Current speed: " + this.Speed + " km/h");
+	}
+
+	public void brake() {
+		Speed = Speed - 10;
+		if (Speed < 0)
+			Speed = 0;
+		System.out.println("Braked. Current speed: " + this.Speed + " km/h");
+	}
+
+	public void changeGear(int gear) {
+		if (gear > 0 && gear <= NO_OF_GEARS) {
+			System.out.println("Gear changed to: " + gear);
+		} else {
+			System.out.println("Invalid gear. Please select gear between 1 and " + NO_OF_GEARS);
+		}
+	}
 }
+
+

@@ -10,6 +10,14 @@ public class TestAutomobile {
 		System.out.println("Color:- " + a1.getColor());
 		System.out.println("Speed:- " +a1.getSpeed());
 		System.out.println("Brand:- " +a1.getBrand());
+		System.out.println("Number of Gears: " + Automobile.NO_OF_GEARS);
+
+		a1.accelerator();
+		a1.changeGear(3);
+		a1.accelerator();
+		a1.brake();
+		System.out.println("Final Speed: " + a1.getSpeed() + " km/h");
+
 		
 		System.out.println("---------------------");
 		

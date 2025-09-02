@@ -15,7 +15,7 @@ public class TestPerson {
 		P.setAddress("Indore");
 
 		System.out.println("Name:- " + P.getName());
-		System.out.println("DOB:- " + P.getDob());
+		System.out.println("DOB:- " + sdf.format(P.getDob()));
 		System.out.println("Address:- " + P.getAddress());
 		
 		
@@ -38,7 +38,7 @@ public class TestPerson {
 		R.setAddress("Delhi");
 
 		System.out.println("Name:- " + R.getName());
-		System.out.println("DOB:- " + R.getDob());
+		System.out.println("DOB:- " + sdf.format(R.getDob()));
 		System.out.println("Address:- " + R.getAddress());
 		
 		

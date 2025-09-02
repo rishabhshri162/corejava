@@ -41,6 +41,8 @@ public class Account {
 			 System.out.println("Insufficient fund transfer " + getbalance());
 			
 		} else {
+			this.balance = this.balance - amount;
+
 			System.out.println("Total balance after withdrawal " + getbalance());
 		}
 

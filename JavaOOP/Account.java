@@ -29,6 +29,17 @@ public class Account {
 		 this.balance = balance;
 		 
 	 }
+//	 deposit method
+	 public void deposit (double amount) {
+		 this.balance = this.balance + amount;
+		 System.out.println("total balance after fund transfer:- " + getbalance());
+	 }
+	 
+//	 withdrawal method
+	 public void withdrawal (double amount) {
+		 this .balance = this.balance - amount;
+		 System.out.println("total balanace after withdrawal:- " + getbalance());
+	 }
 	
 
 }

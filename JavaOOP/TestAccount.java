@@ -7,11 +7,15 @@ public class TestAccount {
 		Rishabh.setnumber("789987789789");
 		Rishabh.setaccountType("Current");
 		Rishabh.setbalance(10000.00);
+	
 
 		System.out.println("Rishabh Account Number: " + Rishabh.getnumber());
 		System.out.println("Rishabh Account Type: " + Rishabh.getaccountType());
 		System.out.println("Rishabh Account Balance: " + Rishabh.getbalance());
-
+         Rishabh.deposit(5000);
+         Rishabh.withdrawal(2000);
+         System.out.println();
+         
 		System.out.println("---------------------");
 		Account Ram = new Account();
 		Ram.setnumber("895622356533");

@@ -18,6 +18,14 @@ public class TestPerson {
 		System.out.println("DOB:- " + sdf.format(P.getDob()));
 		System.out.println("Address:- " + P.getAddress());
 		
+		
+		
+		if (P.getAge() >= Person.AVG_AGE) {
+			System.out.println(P.getAge() + "  You are eligible to vote");
+		} else {
+			System.out.println(P.getAge()  + "  You are not eligible to vote");
+		}
+		
 		System.out.println();
 		System.out.println("--------------------");;
 		

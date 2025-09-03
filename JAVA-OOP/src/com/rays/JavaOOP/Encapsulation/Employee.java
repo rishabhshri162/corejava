@@ -1,4 +1,4 @@
-package com.rays.JavaOOP;
+package com.rays.JavaOOP.Encapsulation;
 
 public class Employee {
 	private String name;

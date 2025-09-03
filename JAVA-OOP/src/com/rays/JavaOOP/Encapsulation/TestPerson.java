@@ -1,4 +1,4 @@
-package com.rays.JavaOOP;
+package com.rays.JavaOOP.Encapsulation;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

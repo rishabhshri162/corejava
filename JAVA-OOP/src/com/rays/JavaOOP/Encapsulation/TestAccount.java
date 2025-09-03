@@ -1,4 +1,4 @@
-package com.rays.JavaOOP;
+package com.rays.JavaOOP.Encapsulation;
 
 public class TestAccount {
 	public static void main(String[] args) {
@@ -13,7 +13,7 @@ public class TestAccount {
 		System.out.println("Rishabh Account Type: " + Rishabh.getaccountType());
 		System.out.println("Rishabh Account Balance: " + Rishabh.getbalance());
          Rishabh.deposit(5000);
-         Rishabh.withdrawal(2000);
+         Rishabh.withdrawal(200);
          System.out.println();
          
 		System.out.println("---------------------");

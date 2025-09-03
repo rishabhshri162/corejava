@@ -1,4 +1,4 @@
-package com.rays.JavaOOP;
+package com.rays.JavaOOP.Encapsulation;
 
 public abstract class TestEmployee {
 	public static void main(String[] args) {

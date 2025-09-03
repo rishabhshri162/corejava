@@ -1,4 +1,4 @@
-package com.rays.JavaOOP;
+package com.rays.JavaOOP.Encapsulation;
 
 public class Account {
 	private String number;
@@ -8,7 +8,7 @@ public class Account {
 	public String getnumber() {
 		return this.number;
 	}
-	
+
 	public void setnumber(String number) {
 		this.number = number;
 		

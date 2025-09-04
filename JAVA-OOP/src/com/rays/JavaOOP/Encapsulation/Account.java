@@ -32,7 +32,7 @@ public class Account {
 //	 deposit method
 	 public void deposit (double amount) {
 		 this.balance = this.balance + amount;
-		 System.out.println("total balance after fund transfer:- " + getbalance());
+		 System.out.println("total balance after deposit:- " + getbalance());
 	 }
 	 
 //	 withdrawal method
@@ -47,6 +47,27 @@ public class Account {
 		}
 
 	 }
+//		Fund Transfer
+	 public void fundTransfer(Account targetAccount, double amount) {
+		if (amount > this.balance) {
+			System.out.println("Insuffiecient fund to transfer");
+			
+		} else {
+			this.balance = this.balance - amount;
+			targetAccount.balance = targetAccount.balance + amount;
+			
+			System.out.println("Transferred " + amount + " from " + this.number + " to " + targetAccount.number);
+			System.out.println("Your new balance " + this.getbalance());
+			System.out.println("Receiver's new balance " + targetAccount.getbalance());
+
+		}
+		
+		
+		 
+	 }
+}
+	 
+	 
 	
 
-}
+

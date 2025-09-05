@@ -1,4 +1,5 @@
 package com.rays.JavaOOP.constructor;
+
 public class Account {
 	private String accNo;
 	private String accType;
@@ -39,8 +40,24 @@ public class Account {
 		}
 		 
 			}
+	 
+//		Fund Transfer
+	 public void fundTransfer(Account targetAccount, double amount) {
+		if (amount > this.balance) {
+			System.out.println("Insuffiecient fund to transfer");
+			
+		} else {
+			this.balance = this.balance - amount;
+			targetAccount.balance = targetAccount.balance + amount;
+			
+			System.out.println("Transferred " + amount + " from " + this.accNo + " to " + targetAccount.accNo);
+			System.out.println("Your new balance " + this.getBalance());
+			System.out.println("Receiver's new balance " + targetAccount.getBalance());
+
+		}
 		 
 
 
 	 }
+}
 

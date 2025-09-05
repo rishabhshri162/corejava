@@ -18,7 +18,11 @@ public class TestAccount {
 		System.out.println("Balance: " + a2.getBalance());
 		a2.deposit(1000);
 		a2.withdrawal(500);
+		System.out.println("--------------");
+		
+		a1.fundTransfer(a2, 500);
 		
 	}
+	
 
 }

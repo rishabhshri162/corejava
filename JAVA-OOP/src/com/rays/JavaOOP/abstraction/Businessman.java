@@ -25,6 +25,7 @@ public void party() {
 	}
 @Override
 	public void getName() {
-		System.out.println("Name: " + "Rishabh");
+		System.out.println("Ris");
+		
 	}
 }

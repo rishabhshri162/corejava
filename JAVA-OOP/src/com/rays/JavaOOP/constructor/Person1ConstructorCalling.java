@@ -1,6 +1,7 @@
 package com.rays.JavaOOP.constructor;
 
 public class Person1ConstructorCalling {
+	//CONSTRUCTOR CALLING IN SAME CLASS
 	
 public Person1ConstructorCalling () {
 	System.out.println("Person1: Default Constructor");

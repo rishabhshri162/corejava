@@ -265,4 +265,54 @@ mysql> select * from employee;
 +----+---------+-----------+--------+
 11 rows in set (0.00 sec)
 
+mysql> insert into employee values(13, 'Deepak', 'microsoft', 80000);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into employee values(14, 'Deepak', 'infosys', 100000);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> select * from employee;
++----+---------+-----------+--------+
+| id | name    | company   | salary |
++----+---------+-----------+--------+
+|  1 | Ram     | Tcs       |  50000 |
+|  2 | Rishabh | Tcs       |  70000 |
+|  3 | Rahul   | wipro     |  65000 |
+|  4 | shyam   | ibm       |  85999 |
+|  6 | shyam   | Cognizant |  85000 |
+|  7 | Vishal  | google    |  25000 |
+|  8 | Akash   | Capgemini |  65000 |
+|  9 | Shreyas | HCL       |  45000 |
+| 10 | Gagan   | Fujitsu   |  49000 |
+| 11 | nitin   | Amdocs    |  49000 |
+| 12 | Deepak  | Adobe     |  75000 |
+| 13 | Deepak  | microsoft |  80000 |
+| 14 | Deepak  | infosys   | 100000 |
++----+---------+-----------+--------+
+13 rows in set (0.00 sec)
+
+mysql> update employee set name = 'Rishabh' where id = 14;
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> select * from employee;
++----+---------+-----------+--------+
+| id | name    | company   | salary |
++----+---------+-----------+--------+
+|  1 | Ram     | Tcs       |  50000 |
+|  2 | Rishabh | Tcs       |  70000 |
+|  3 | Rahul   | wipro     |  65000 |
+|  4 | shyam   | ibm       |  85999 |
+|  6 | shyam   | Cognizant |  85000 |
+|  7 | Vishal  | google    |  25000 |
+|  8 | Akash   | Capgemini |  65000 |
+|  9 | Shreyas | HCL       |  45000 |
+| 10 | Gagan   | Fujitsu   |  49000 |
+| 11 | nitin   | Amdocs    |  49000 |
+| 12 | Deepak  | Adobe     |  75000 |
+| 13 | Deepak  | microsoft |  80000 |
+| 14 | Rishabh | infosys   | 100000 |
++----+---------+-----------+--------+
+13 rows in set (0.00 sec)
+
 mysql>

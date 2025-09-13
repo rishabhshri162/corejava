@@ -12,7 +12,7 @@ create table employee(id int primary key, name varchar(30), company varchar(30),
 
 insert into employee values(1, 'Rishabh', 'Ltimindtree', 1500000);                                                   (to insert data in table)
 
-select * a from employee;                                      (if u want see data in your table)
+select *  from employee;                                      (if u want see data in your table)
 
 select name from employee;                               (if you want to search by name  only name column will show)
 

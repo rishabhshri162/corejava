@@ -1,0 +1,63 @@
+SQL QUERIES
+
+create database databasename;   
+                                              
+(to create database ex.mydb)
+
+use mydb;    
+                                                                                             
+(to use databse)
+
+create table employee;  
+                                                  
+(to create tables in databse ex:employee table)
+
+show tables;    
+                                                                                         
+(for table view)
+
+create table employee(id int primary key, name varchar(30), company varchar(30), salary int);                         
+
+ (to create column in your table)
+
+insert into employee values(1, 'Rishabh', 'Ltimindtree', 1500000);                                                  
+(to insert data in table)
+
+select * a from employee;                                                     
+(if u want see data in your table)
+
+select name from employee;                             
+(if you want to search by name  only name column will show)
+
+select company from employee;                          
+(if you want to search by company  only company column will show)
+
+select salary from employee;                         
+(if you want to search by salary  only salary column will show)
+
+select id from employee;                                
+(if you want to search by id only id column will show)
+
+select * from employee where name = 'shyam';               
+(Only those named shyam will show)
+
+select * from employee where salary > 45000;               
+(only those whose salary greater than 45000 will show)
+
+select * from employee where name like 'a%';               
+(Only those whose names start with 'a' will be shown)
+
+select * from employee where name like '%a';                 
+(Only those whose names end with 'a' will be shown)
+
+delete from employee where name = 'shyam';                  
+(shyam named all data will delete)
+
+delete from employee where id  = 4;                               
+(id 4  data will delete)
+
+update employee set company = 'ibm' where id = 3;                    
+(to update)
+
+
+

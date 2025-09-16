@@ -1,13 +1,15 @@
 package com.rays.collection.set;
+
+
 import java.util.HashSet;
 import java.util.Set;
-public class TestSet {
 
 
 //1. set contain only unique element
 //2. set can contain only one null value
 //. order of set is sorting order by default asc order
 
+public class TestHashSet {
 	public static void main(String[] args) {
 		
 		Set s = new HashSet();
@@ -23,6 +25,3 @@ public class TestSet {
 	}
 
 }
-
-
-

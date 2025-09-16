@@ -1,29 +1,27 @@
-
 package com.rays.collection.queue;
 
-	import java.util.ArrayDeque;
-	import java.util.Queue;
+import java.util.ArrayDeque;
 
-	//1. First in First out Last in Last out
-	public class TestQueue{
+import java.util.Queue;
 
-		public static void main(String[] args) {
+//1. First in First out Last in Last out
+public class TestQueue {
 
-			Queue q = new ArrayDeque();
+	public static void main(String[] args) {
 
-			q.offer(5);
-			q.offer(4);
-			q.offer(3);
-			q.offer(6);
+		Queue q = new ArrayDeque();
+
+		q.offer(5);
+		q.offer(4);
+		q.offer(3);
+		q.offer(6);
 //
-			System.out.println("queue: " + q);
-			System.out.println(q.peek());
-			System.out.println("queue: " + q);
-			System.out.println("Remove the head of the queue: " + q.poll());
-			System.out.println("queue: " + q);
-
-		}
+		System.out.println("queue: " + q);
+		System.out.println(q.peek());
+		System.out.println("queue: " + q);
+		System.out.println("Remove the head of the queue: " + q.poll());
+		System.out.println("queue: " + q);
 
 	}
 
-
+}

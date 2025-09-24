@@ -6,7 +6,7 @@ import java.io.FileReader;
 public class ReadTextFileByFileReader {
 	public static void main(String[] args) throws Exception {
 		FileReader fr = new FileReader("D://IO//Hello worLd.txt");
-		
+
 		int i = fr.read();
 		
 		while (i != -1) {
@@ -14,8 +14,8 @@ public class ReadTextFileByFileReader {
 			i = fr.read();
 			
 		}
-		
 		fr.close();
+
 	}
 
 }

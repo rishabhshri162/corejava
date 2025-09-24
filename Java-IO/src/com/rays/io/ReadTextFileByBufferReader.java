@@ -7,7 +7,7 @@ import java.io.FileReader;
 public class ReadTextFileByBufferReader {
 	public static void main(String[] args) throws Exception {
 
-		BufferedReader br = new BufferedReader(new FileReader("D://IO//Hello worLd.txt"));
+		BufferedReader br = new BufferedReader(new FileReader("D://IO//Helloworld.txt"));
 		
 		String line = br.readLine();
 		

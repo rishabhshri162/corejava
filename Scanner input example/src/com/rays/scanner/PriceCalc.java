@@ -15,6 +15,8 @@ public class PriceCalc{
 		    int qty = sc.nextInt();
 		    
 		    System.out.println("Total = " + price*qty);
+		    
+		    
 	  }
 	}
 

@@ -10,6 +10,8 @@ public class WordsCount{
 	    String str = sc.nextLine();
 	    String[] words = str.split(" ");
 	    System.out.println("Word count: " + words.length);
+
+
 	  }
 	}
 
